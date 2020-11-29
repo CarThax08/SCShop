@@ -1,0 +1,9 @@
+name: SCShop
+version: ${project.version}
+main: com.github.carthax08.scshop.Main
+api-version: 1.16
+prefix: SCShop
+depend: [ SimpleCurrencies ]
+authors: [ CarThax08 ]
+description: Shop plugin for SimpleCurrencies
+website: github.com/CarThax08/SCShop
