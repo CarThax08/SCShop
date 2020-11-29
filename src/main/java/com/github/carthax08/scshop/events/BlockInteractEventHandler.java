@@ -44,11 +44,7 @@ public class BlockInteractEventHandler implements Listener {
                 int price = Integer.parseInt(signConfig.getString("data.price"));
                 String currency = signConfig.getString("data.currency");
                 if(signConfig.getString("data.type").equalsIgnoreCase("selling")) {
-                    if (SimpleCurrencies.getCurrency(currency, e.getPlayer()) >= price) {
-                        SimpleCurrencies.removeCurrency(currency, e.getPlayer(), price);
-                    } else {
-                        e.getPlayer().sendMessage("You do not have enough " + currency + " to purchase this item!");
-                    }
+                    //WORK IN PROGRESS
                 }else if(signConfig.getString("data.type").equalsIgnoreCase("buying")){
                     Player playerToCheck = null;
                     OfflinePlayer offlinePlayerToCheck = null;
